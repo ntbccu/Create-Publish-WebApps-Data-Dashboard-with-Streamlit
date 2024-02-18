@@ -17,3 +17,11 @@ st.write('''This is our first Web App.
          ''')
 
 st.write(df)
+st.line_chart(df)
+st.area_chart(df)
+
+# đặt label cho slider
+myslider = st.slider('Celsius')
+
+# in slider, và convert slider value (xem như là C temperature) to F temperature
+st.write(myslider,'in Fahrenheit is ', myslider *9/5 +32)
